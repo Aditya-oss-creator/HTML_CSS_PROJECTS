@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.94rem;
+  background-color: hsl(0, 0%, 95%);
+}
+
+main {
+  margin: 4rem 1.5rem;
+}
+
+.title {
+  color: hsl(0, 0%, 95%);
+  margin: 1rem auto;
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+main img {
+  margin-bottom: 1rem;
+}
+
+#sedan-section {
+  background-color: hsl(31, 77%, 52%);
+  padding: 3rem;
+  border-radius: 8px 8px 0 0;
+}
+
+#sedan-section a {
+  color: hsl(31, 77%, 52%);
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+#suv-section {
+  background-color: hsl(184, 100%, 22%);
+  padding: 3rem;
+}
+
+#suv-section a {
+  color: hsl(184, 100%, 22%);
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+#luxury-section {
+  background-color: hsl(179, 100%, 13%);
+  padding: 3rem;
+  border-radius: 0 0 8px 8px;
+}
+
+#luxury-section a {
+  color: hsl(179, 100%, 13%);
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.car-info {
+  margin: 1.3rem auto 1rem auto;
+  color: hsl(0, 0%, 95%);
+  font-family: 'Lexend Deca', sans-serif;
+  line-height: 1.9;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+main a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 1rem 0;
+  padding: 0.8rem 1.7rem;
+  border-radius: 27px;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 56rem) {
+  main {
+    width: 55rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  main a {
+    margin: 3.5rem 0 1rem 0;
+  }
+  .car-info {
+    font-size: 0.9rem;
+  }
+  #sedan-section {
+    border-radius: 8px 0 0 8px;
+    padding: 2.5rem;
+    height: 30rem;
+  }
+
+  #sedan-section a:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    border: 2px solid hsl(0, 0%, 95%);
+  }
+
+  #suv-section {
+    padding: 2.5rem;
+    height: 30rem;
+  }
+
+  #suv-section a:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+    border: 2px solid hsl(0, 0%, 95%);
+  }
+
+  #luxury-section {
+    border-radius: 0 8px 8px 0;
+    padding: 2.5rem;
+    height: 30rem;
+  }
+
+  #luxury-section a:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    border: 2px solid hsl(0, 0%, 95%);
+  }
+}
