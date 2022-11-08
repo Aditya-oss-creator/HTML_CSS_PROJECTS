@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --dark-blue-main-bg: hsl(217, 54%, 11%);
+  --dark-blue-card-bg: hsl(216, 50%, 16%);
+  --dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+p {
+  color: var(--soft-blue);
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--cyan);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+main {
+  height: 100vh;
+  background: var(--dark-blue-main-bg);
+  flex-direction: column;
+  position: relative;
+}
+
+.card {
+  min-height: 410px;
+  width: 238px;
+  padding: 1rem;
+  border-radius: 12px;
+  background: var(--dark-blue-card-bg);
+  flex-direction: column;
+}
+
+.card-img-container {
+  position: relative;
+  margin-bottom: 1.4rem;
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: rgba(0, 255, 247, 0.4);
+  cursor: pointer;
+}
+
+.icon {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay .icon img {
+  height: 40px;
+}
+
+.card-img-container:hover .overlay {
+  opacity: 1;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.card-img-container img {
+  height: 200px;
+  border-radius: 6px;
+}
+
+.card-text {
+  margin: 1rem 0;
+  font-size: 0.8rem;
+}
+
+.card-content-wrapper {
+  margin-bottom: 1rem;
+}
+
+.card-content-wrapper img {
+  margin-right: 6px;
+}
+
+.nft-price,
+.nft-discount {
+  font-size: 0.8rem;
+}
+
+.nft-price {
+  color: var(--cyan);
+  font-weight: 700;
+}
+
+.nft-discount {
+  color: var(--soft-blue);
+}
+
+.avatar img {
+  height: 26px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+
+.avatar p {
+  font-size: 0.75rem;
+  word-spacing: px;
+}
+
+.avatar p span {
+  color: var(--white);
+}
+
+.seperator {
+  height: 1px;
+  width: 100%;
+  z-index: 1000;
+  background: var(--dark-blue-line);
+  margin-bottom: 0.75rem;
+}
+
+.attribution {
+  position: absolute;
+  font-size: 14px;
+  text-align: center;
+  color: var(--white);
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.attribution a {
+  color: var(--cyan);
+}
