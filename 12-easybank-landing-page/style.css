@@ -259,7 +259,9 @@ footer .content a {
 }
 
 footer .content a:hover {
-  color: var(--grayish-blue);
+  color: var(--lime-green);
+  filter: invert(0.4) sepia(1) saturate(18.7) hue-rotate(104.4deg)
+    brightness(0.95);
 }
 
 footer .content li {
