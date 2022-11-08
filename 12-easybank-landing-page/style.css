@@ -30,6 +30,15 @@ ul {
   -webkit-font-smoothing: antialiased;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-blue);
+}
+
 p {
   line-height: 1.4;
 }
@@ -149,8 +158,9 @@ section.pros-section {
   padding: 100px 0;
 }
 
-section.pros-section h1 {
+section.pros-section h2 {
   margin-bottom: 20px;
+  font-size: 1.8rem;
 }
 
 section.pros-section p.section-text {
