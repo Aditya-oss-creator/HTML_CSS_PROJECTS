@@ -365,8 +365,12 @@ footer .copyright {
     outline: none;
   }
   .nav-links a {
+    color: var(--grayish-blue);
+  }
+  .nav-links a:hover {
     color: var(--dark-blue);
   }
+
   .nav-links li {
     padding-bottom: 10px;
   }
