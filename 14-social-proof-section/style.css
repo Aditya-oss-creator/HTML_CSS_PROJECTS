@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+  --dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  padding: 4rem 1.5rem;
+  position: relative;
+  font-size: 15px;
+  background: url('./images/bg-pattern-top-desktop.svg'),
+    url('./images/bg-pattern-bottom-desktop.svg');
+  background-position: top -6rem left, bottom -13rem right;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.container {
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 868px;
+}
+
+.reviews {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.reviews-left {
+  margin-bottom: 2.25rem;
+}
+
+.reviews-left h1 {
+  color: var(--dark-magenta);
+  margin-bottom: 1rem;
+  font-size: 2.325rem;
+  font-weight: 700;
+}
+
+.reviews-left p {
+  line-height: 1.3;
+  font-weight: 500;
+  color: var(--dark-grayish-magenta);
+  max-width: 75vw;
+  margin: 0 auto;
+}
+
+.reviews-right .ratings-wrapper {
+  background: var(--light-grayish-magenta);
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  width: 18rem;
+  margin: 0 auto;
+  margin-bottom: 0.75rem;
+}
+
+.reviews-right .ratings-wrapper .star-icons {
+  margin-right: 0.85rem;
+}
+
+.reviews-right .ratings-wrapper img {
+  margin-bottom: 0.325rem;
+  height: 11px;
+}
+
+.reviews-right .ratings-wrapper h5 {
+  color: var(--dark-magenta);
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+.cards .card {
+  background: var(--dark-magenta);
+  padding: 1.5rem 1.725rem;
+  border-radius: 6px;
+  max-width: 18rem;
+  margin: 0 auto;
+  margin-bottom: 0.725rem;
+}
+
+.card .card-title {
+  margin-bottom: 1rem;
+}
+
+.card .card-title img {
+  height: 28px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.card .card-title .card-heading {
+  color: var(--white);
+  line-height: 1.4;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.card .card-title .card-status {
+  color: var(--soft-pink);
+  font-size: 11px;
+  opacity: 0.75;
+  font-weight: 500;
+}
+
+.card .card-content {
+  color: var(--white);
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 14px;
+  text-align: center;
+  color: var(--soft-pink);
+}
+
+.attribution a {
+  color: var(--dark-magenta);
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 865px;
+  }
+
+  .reviews {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+  }
+
+  .reviews-left {
+    flex-basis: 20rem;
+    text-align: left;
+    font-size: 12.5px;
+  }
+
+  .reviews-right {
+    max-width: 22.5rem;
+    /* flex: 1; */
+  }
+
+  .reviews-right .ratings-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ratings-wrapper:nth-child(1) {
+    transform: translateX(-2.2rem);
+    justify-content: flex-start;
+  }
+
+  .ratings-wrapper:nth-child(3) {
+    transform: translateX(2.25rem);
+    justify-content: flex-start;
+  }
+
+  .cards {
+    display: flex;
+    gap: 1rem;
+  }
+  .card {
+    font-size: 11.5px;
+    max-width: 8rem;
+  }
+
+  .card:nth-child(1) {
+    transform: translateY(-16px);
+  }
+
+  .card:nth-child(3) {
+    transform: translateY(16px);
+  }
+}
