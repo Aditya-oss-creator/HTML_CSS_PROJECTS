@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+}
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+.container {
+  background: var(--light-gray);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  font-size: 16px;
+}
+
+.sections-wrapper {
+  max-width: 640px;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: 0 5px 13px rgba(0, 0, 0, 0.2);
+}
+
+.section {
+  padding: 2rem 1.5rem;
+}
+
+.section-1 {
+  background: white;
+}
+
+.section-1 h3 {
+  color: var(--cyan);
+  margin-bottom: 1.75rem;
+}
+.section-1 h4 {
+  color: var(--bright-yellow);
+  margin-bottom: 1.3rem;
+}
+.section-1 p {
+  color: var(--grayish-blue);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.section-2 {
+  background: var(--cyan);
+}
+.section-2 h3 {
+  color: var(--light-gray);
+  margin-bottom: 1.2rem;
+}
+.section-2 .subscription {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.section-2 p {
+  margin-bottom: 1.8rem;
+  color: var(--light-gray);
+}
+.section-2 p span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--light-gray);
+  margin-right: 0.6rem;
+}
+.section-2 p small {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--light-gray);
+  opacity: 0.7;
+}
+.section-2 .btn {
+  width: 100%;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  padding: 1rem 0;
+  background: var(--bright-yellow);
+  color: var(--light-gray);
+  font-size: 1rem;
+}
+
+.section-3 {
+  background: hsl(179, 47%, 52%);
+}
+.section-3 h3 {
+  color: var(--light-gray);
+  margin-bottom: 1.5rem;
+}
+
+.section-3 p {
+  color: var(--light-gray);
+  opacity: 0.7;
+  line-height: 1.5;
+  font-size: 14px;
+}
+/* 
+@media screen and (min-width: 565px) {
+  .sections-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+} */
+
+@media screen and (min-width: 565px) {
+  .sections-wrapper {
+    display: grid;
+    grid-template-areas: 'a a' 'b c';
+  }
+  .section-1 {
+    grid-area: a;
+  }
+  .section-2 {
+    grid-area: b;
+  }
+  .section-3 {
+    grid-area: c;
+  }
+}
