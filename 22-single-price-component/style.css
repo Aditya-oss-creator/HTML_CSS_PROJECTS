@@ -106,14 +106,16 @@
   line-height: 1.5;
   font-size: 14px;
 }
-/* 
-@media screen and (min-width: 565px) {
-  .sections-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-} */
+.attribution {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+  text-align: center;
+}
 
+.attribution a {
+  color: var(--cyan);
+}
 @media screen and (min-width: 565px) {
   .sections-wrapper {
     display: grid;
