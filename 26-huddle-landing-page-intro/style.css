@@ -10,7 +10,7 @@ body {
   background: url('./images/bg-mobile.svg');
   background-repeat: no-repeat;
   background-color: var(--violet);
-  background-position: center;
+  /* background-position: center; */
 }
 h1 {
   font-family: 'Poppins', sans-serif;
@@ -136,14 +136,16 @@ header {
   color: var(--soft-magenta);
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   body {
     font-family: 'Open Sans', sans-serif;
     background: url('./images/bg-desktop.svg');
     background-repeat: no-repeat;
     background-color: var(--violet);
   }
+}
 
+@media screen and (min-width: 992px) {
   .navbar img {
     width: 12rem;
   }
