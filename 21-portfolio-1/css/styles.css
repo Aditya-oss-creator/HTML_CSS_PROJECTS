@@ -186,6 +186,7 @@ Navbar
 */
 .nav-links {
   display: none;
+  border: 2px solid red;
 }
 .nav {
   height: 5rem;

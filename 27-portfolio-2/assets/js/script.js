@@ -1,9 +1,20 @@
-const mobileNavLinks = document.querySelectorAll('.mobile-nav-links');
-const mobileNavBtn = document.querySelector('.mobile-nav-btn');
-
-console.log(mobileNavLinks);
-console.log(mobileNavBtn);
-
-mobileNavBtn.addEventListener('click', function (e) {
-  mobileNavLinks.classList.toggle('mobile-navbar');
+const navbar = document.querySelector('#nav');
+const navBtn = document.querySelector('#nav-btn');
+const closeBtn = document.querySelector('#close-btn');
+const sidebar = document.querySelector('#sidebar');
+const hero = document.querySelector('header');
+// add fixed class to navbar
+window.addEventListener('scroll', function () {
+  if (window.pageYOffset > 80) {
+    navbar.classList.add('navbar-fixed');
+  } else {
+    navbar.classList.remove('navbar-fixed');
+  }
+});
+// show sidebar
+navBtn.addEventListener('click', function () {
+  sidebar.classList.add('show-sidebar');
+});
+closeBtn.addEventListener('click', function () {
+  sidebar.classList.remove('show-sidebar');
 });
